@@ -46,13 +46,13 @@ CHARGILY_PAY_SECRET_KEY=your_secret_key_here
 php artisan migrate
 ```
 
-### 4. Local Development
+### 4. Local Development
 
 ```bash
 composer dev
 ```
 
-### 5. Webhook Testing (Locally)
+### 5. Webhook Testing (Locally)
 
 To test webhooks locally, you must use a tool like **Ngrok** to expose your local server:
 
