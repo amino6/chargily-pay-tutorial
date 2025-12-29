@@ -25,6 +25,9 @@ Route::get('success', [CheckoutController::class, 'success'])
 Route::get('failure', [CheckoutController::class, 'failure'])
     ->name('failure');
 
+Route::post('chargilypay/webhook', [CheckoutController::class, 'webhook'])
+    ->name('chargilypay.webhook');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('Dashboard');
